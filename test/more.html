@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> In-Hand Object Rotation via Rapid Motor Adaptation </title>
+	<link href="res/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+      .header {
+        width: auto;
+        max-width: auto;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        background-color: rgba(250, 250, 250)
+      }
+
+      a:link,a:visited
+      {
+        color: #0071bc;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #208799;
+      }
+
+      hr {
+        border: 10;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 113, 188, 0.2), rgba(0, 0, 0, 0.1), rgba(0, 113, 188, 0.2));
+      }
+
+      .gap-30 {height:30px;}
+      .gap-20 {height:20px;}
+      .gap-10 {height:10px;}
+      .gap-5 {height:5px;}
+
+      .no-gutters {
+      margin-right: 0;
+      margin-left: 0;
+    }
+	</style>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="res/js/bootstrap.min.js"></script>
+	<script>
+	function show(shown, hidden1, hidden2, hidden3) {
+	  document.getElementById(shown).style.display='block';
+	  document.getElementById(hidden1).style.display='none';
+	  document.getElementById(hidden2).style.display='none';
+	  document.getElementById(hidden3).style.display='none';
+	  return false;
+	}
+	</script>
+
+</head>
+
+<div class="header">
+	<div class="container">
+		<center><h1>In-Hand Object Rotation via Rapid Motor Adaptation</h1></center>
+	</div>
+</div>
+
+<div id="Page1">
+	<div class="container">
+		<center>
+		<a href="index.html"> [Main Page] </a><br>
+		<div class="gap-10"></div>
+		<a href="#" onclick="return show('Page1','Page2','Page3','Page4');"> Collection 1 </a> |
+		<a href="#" onclick="return show('Page2','Page1','Page3','Page4');"> Collection 2 </a> |
+		<a href="#" onclick="return show('Page3','Page1','Page2','Page4');"> Collection 3 </a> |
+		<a href="#" onclick="return show('Page4','Page1','Page2','Page3');"> Collection 4 </a>
+		</center>
+		<div class="gap-20"></div>
+		<div class="row no-gutters">
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/sake_cup.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/ice_ball.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/kiwi.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+		</div>
+
+		<div class="row no-gutters">
+			<div class="row no-gutters">
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/toy_thorny.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/toy_cube.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/reaction_l4.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+			</div>
+		</div>
+
+		<div class="row no-gutters">
+			<div class="row no-gutters">
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/shuttlecock.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/toy_hole.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/rubiks_cube.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="Page2" style="display:none">
+	<div class="container">
+		<center>
+		<a href="index.html"> [Main Page] </a><br>
+		<div class="gap-10"></div>
+		<a href="#" onclick="return show('Page1','Page2','Page3','Page4');"> Collection 1 </a> |
+		<a href="#" onclick="return show('Page2','Page1','Page3','Page4');"> Collection 2 </a> |
+		<a href="#" onclick="return show('Page3','Page1','Page2','Page4');"> Collection 3 </a> |
+		<a href="#" onclick="return show('Page4','Page1','Page2','Page3');"> Collection 4 </a>
+		</center>
+		<div class="gap-20"></div>
+		<div class="row no-gutters">
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/heirloom_tomato.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/avocado.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/hourglass_5min.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+		</div>
+
+		<div class="row no-gutters">
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/reaction_l1.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/lemon.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/hourglass_15min.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+		</div>
+
+		<div class="row no-gutters">
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/pear.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/orange.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/hourglass_10min.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="Page3" style="display:none">
+	<div class="container">
+		<center>
+		<a href="index.html"> [Main Page] </a><br>
+		<div class="gap-10"></div>
+		<a href="#" onclick="return show('Page1','Page2','Page3','Page4');"> Collection 1 </a> |
+		<a href="#" onclick="return show('Page2','Page1','Page3','Page4');"> Collection 2 </a> |
+		<a href="#" onclick="return show('Page3','Page1','Page2','Page4');"> Collection 3 </a> |
+		<a href="#" onclick="return show('Page4','Page1','Page2','Page3');"> Collection 4 </a>
+		</center>
+		<div class="gap-20"></div>
+		<div class="row no-gutters">
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/matcha.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/tomato.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/hourglass_30min.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+		</div>
+
+		<div class="row no-gutters">
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/reaction_l2.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/massage.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/hourglass_2min.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+		</div>
+
+		<div class="row no-gutters">
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/toy_double_cone.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/reaction_l3.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+			<div class="col-4">
+				<video controls playsinline autoplay loop muted src="res/results/main/soft_toy_cube.mp4" width="98%" preload="metadata"
+				       style="border-radius:10px;"></video>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="Page4" style="display:none">
+	<div class="container">
+		<center>
+		<a href="index.html"> [Main Page] </a><br>
+		<div class="gap-10"></div>
+		<a href="#" onclick="return show('Page1','Page2','Page3','Page4');"> Collection 1 </a> |
+		<a href="#" onclick="return show('Page2','Page1','Page3','Page4');"> Collection 2 </a> |
+		<a href="#" onclick="return show('Page3','Page1','Page2','Page4');"> Collection 3 </a> |
+		<a href="#" onclick="return show('Page4','Page1','Page2','Page3');"> Collection 4 </a>
+		</center>
+		<div class="gap-20"></div>
+		<div class="row no-gutters">
+			<div class="row no-gutters">
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/paper_towel.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/nectarine.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/nobounce.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+			</div>
+		</div>
+
+		<div class="row no-gutters">
+			<div class="row no-gutters">
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/toy_polyhedra.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/toy_star.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/bottle.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+			</div>
+		</div>
+
+		<div class="row no-gutters">
+			<div class="row no-gutters">
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/white_peach.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/wood_cube.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+				<div class="col-4">
+					<video controls playsinline autoplay loop muted src="res/results/main/toy_penta.mp4" width="98%" preload="metadata"
+					       style="border-radius:10px;"></video>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</html>
